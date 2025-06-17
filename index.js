@@ -2,7 +2,8 @@ import express from "express"
 const app = express()
 import ContactsRoutes from './routes/contacts.routes.js'
 import { connectdb } from './config/database.js'
-const port = 3000
+
+const port = process.env.PORT
 
 //Database Connections
 connectdb()
